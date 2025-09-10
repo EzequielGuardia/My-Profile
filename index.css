@@ -1,0 +1,161 @@
+body{
+    background-color:white;
+    margin: 0px;
+}
+
+
+
+.intro{
+    width: 100%;
+    height: auto;
+}
+
+.intro__navegador{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+
+.navegador__logo{
+    height: 54px;
+    width: 50px;
+}
+
+.navegador__menu{
+    height: 36px;
+    width: 32px;
+    
+}
+
+.navegador__links {
+    display: none;
+    list-style: none;
+    gap: 24px;
+}
+
+.intro__bienvenida{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bienvenida__foto{
+    height: 300px;
+    width: 300px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.About-me{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 70px;
+}
+
+.about-me__nombre{
+    color: azure;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.about-me__informacion{
+    color: aliceblue;
+    padding: 0 60px;
+    margin-bottom: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicios h2{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 50px;
+}
+
+.servicios__logo{
+    height: 138px;
+    width: 138px;
+}
+
+.servicios__cajas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.servicios__texto{
+    margin: auto 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.servicios__cajas h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 40px 40px;
+    margin-top: 50px;
+    
+}
+
+.formulario__caja__tittle {
+    display: flex;
+    justify-content: center;
+}
+
+.formulario__tittle{
+    color: white;
+    font-size: 32px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.formulario__casillas{
+    display: flex;
+  flex-direction: column; /* Los inputs uno debajo de otro */
+  align-items: flex-start;  /* Mueve el botón a la derecha */
+  gap: 15px;              /* Espaciado entre campos */
+}
+
+.formulario__casillas h3 {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.formulario__casillas input{
+    width: 100%;
+    height: 30px;
+}
+
+.formulario__casillas__textarea {
+    width: 100%;
+    height: 150px;
+    font-size: 16px;
+    resize: none;
+}
+
+.formulario__casillas button {
+  align-self:center;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #fdd835; /* Amarillo como en Figma */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 40px;
+}
