@@ -18,6 +18,7 @@ body{
     padding: 0 16px;
 }
 
+
 .navegador__logo{
     height: 54px;
     width: 50px;
@@ -35,6 +36,25 @@ body{
     gap: 24px;
 }
 
+@media (min-width: 768px) {
+  .navegador__menu {
+    display: none;
+  }
+
+  .navegador__links {
+    display: flex;
+    margin-left: auto;
+    margin-right: 50px;
+    gap: 80px;
+  }
+
+  .navegador__links a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+}
+
 .intro__bienvenida{
     display: flex;
     flex-direction: column;
@@ -49,6 +69,27 @@ body{
     margin: 0 auto;
 }
 
+@media (min-width: 768px) {
+  .intro__bienvenida {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 40px;
+  }
+
+  .intro__bienvenida__titulo{
+    margin-left: 200px;
+    flex: 1;
+  }
+
+  .bienvenida__foto{
+    max-width: 300px;
+    flex: 1;
+    margin-right: 200px;
+  }
+
+}
+
 .About-me{
     background-color: black;
     display: flex;
@@ -60,6 +101,8 @@ body{
 .about-me__nombre{
     color: azure;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-top: 60px;
 }
 
 .about-me__informacion{
@@ -67,6 +110,26 @@ body{
     padding: 0 60px;
     margin-bottom: 70px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media(min-width: 756px){
+
+.About-me{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.about-me__informacion{
+    width: 350px;
+    margin-top: 50px;
+}
+
+.About-me__icono{
+    height: 211px;
+    width: 211px;
+}
+
 }
 
 .servicios{
@@ -101,6 +164,13 @@ body{
 .servicios__cajas h3{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 25px;
+}
+@media(min-width: 756px){
+    .servicios__caja{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 80px;
+}
 }
 
 .formulario{
@@ -149,13 +219,89 @@ body{
 }
 
 .formulario__casillas button {
-  align-self:center;
-  width: 100%;
-  padding: 10px 20px;
-  background-color: #fdd835; /* Amarillo como en Figma */
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  margin: 40px;
+    align-self:center;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #fdd835; /* Amarillo como en Figma */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 40px;
+}
+
+@media(min-width: 756px){
+    .formulario{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 70px;
+    }
+.formulario__tittle{
+    font-size: 60px;
+}
+.formulario__casillas input{
+    width: 376px;
+}
+}
+
+footer{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footer__logo{
+    height: 64px;
+    width: 60px;
+}
+
+.since{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.footer__redes{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.footer__redes__links__titulo{
+width: 73px;
+height: 19px;
+left: 54px;
+top: 3430px;
+color: #2C2C2C;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin-left: 8px;
+
+}
+
+@media (min-width: 500px){
+   footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 30px 30px;
+    height: 355px;
+
+}
+
+.footer__logo{
+    height:70px;
+    width: 65px;
+}
+
+.footer__redes{
+    margin-right: 70px;
+}
 }
